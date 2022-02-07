@@ -4,49 +4,58 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Piterskiy I.V.</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<img src="photo.jpeg" alt="фото">
-	<h1>Питерский Иосиф Валерьевич</h1>
-	<hr size="5" color="black" />
-	<p>Студент 3-го курса заочного факультета МАДИ. Кафедра АСУ(Автоматизированные системы управления)</p>
-	<p>В настоящий момент нахожусь в поиске работы.</p>
-	<hr>
-	<h2>Больше информации обо мне</h2>
-	<hr>
-	<h2><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Опыт работы</a></h2>
-	<hr>
-	<h2>Хобби: </h2>
-		<ul>
-			<li>Спорт: хоккей, фитнес</li>
-			<li>Автомобили</li>
-			<li>BGA пайка</li>
-		</ul>
-	<hr>
-	<h2><a href="technologies.html">Технологии и языки</a></h2>
-		<ul>
-			<li>Python</li>
-			<li>JavaScript</li>
-			<li>HTML5</li>
-			<li>CSS3</li>
-			<li>Git</li>
-			<li>Docker</li>
-		</ul>
-	<hr>
-	<h2>Для связи: </h2>
-		<form>
-			<label for="name">Ваше имя:</label>
-			<input type="" id="name" placeholder="Введите ваше имя">
-		<br>
-			<label for="email">Ваш Email:</label>
-			<input type="" id="email" placeholder="Введите вашу почту">
-		<br>
-			<label for="text">Ваше сообщение:</label>
-		<br>
-			<textarea id="text" rows="2" cols="15"></textarea>
-		<br>		
-			<input type="submit" name="">
+	<div class="container">
+		<div class="about">
+			<img class="myphoto" src="photo.jpeg" alt="фото">
+				<div class="about-text">
+					<h1>Питерский Иосиф Валерьевич</h1>
+					<p>Студент 3-го курса заочного факультета <a href="https://www.madi.ru/">МАДИ</a>. Кафедра АСУ(Автоматизированные системы управления)</p>
+					<p>В настоящий момент нахожусь в поиске работы.</p>
+				</div>
+		</div>
+		<hr>
+		<h2>Больше информации обо мне</h2>
+		<div class="card bg-green">
+			<h2><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Опыт работы</a></h2>
+		</div>
+		<div class="card bg-yellow">
+			<h2>Хобби: </h2>
+				<ul class="list">
+					<li>Спорт: хоккей, фитнес</li>
+					<li>Автомобили</li>
+					<li>BGA пайка</li>
+				</ul>
+		</div>
+		<div class="card bg-red">
+			<h2>Технологии и языки</h2>
+				<ul class="list">
+					<li>Python</li>
+					<li>JavaScript</li>
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>Git</li>
+					<li>Docker</li>
+				</ul>
+		</div>
+		<hr>
+		<h2>Для связи: </h2>
+			<form>
+				<label for="name">Ваше имя:</label>
+				<input type="" id="name" placeholder="Введите ваше имя">
+			<br>
+				<label for="email">Ваш Email:</label>
+				<input type="" id="email" placeholder="Введите вашу почту">
+			<br>
+				<label for="text">Ваше сообщение:</label>
+			<br>
+				<textarea id="text" rows="8" cols="60"></textarea>
+			<br>		
+				<input type="submit" name="">
 
-		</form>
-</body>
+			</form>
+	</div>
+	</body>
 </html>
